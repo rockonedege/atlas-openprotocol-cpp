@@ -1,0 +1,11 @@
+{{#a}}
+BOOST_AUTO_TEST_CASE(test_{{{name}}})
+{
+  using open_protocol::api::message::parse;
+  
+  std::string s = "{{{s}}}";
+  auto[is_ok, mid] = parse(s);
+  BOOST_TEST(is_ok);
+}
+
+{{/a}}
