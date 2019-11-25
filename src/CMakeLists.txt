@@ -20,8 +20,6 @@ system_info()
 include_boost()
 find_package(pybind11 CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
-#find_package(TBB CONFIG REQUIRED)
-#find_package(Threads REQUIRED)
 
 macro(run_demo main)
    add_executable(${main} ./reference/${main}.cpp)

@@ -23,7 +23,11 @@ navigate to the root of project.
 ```
 
 - Windows
-
 ```batch
 ./windows.bat
+```
+
+- docker on Linux
+```bash
+./docker.sh
 ```
